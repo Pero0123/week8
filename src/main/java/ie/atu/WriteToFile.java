@@ -10,8 +10,8 @@ public class WriteToFile {
         //specify the file name
         String fileName = "File13.txt";
 
-        try (FileWriter writer = new FileWriter(fileName)){
-            writer.write("traffic gonna be cat");
+        try (FileWriter writer = new FileWriter(fileName, true)){
+            writer.write("traffic gonna be cat2");
 
             System.out.println("content successfully written to the file");
         }
